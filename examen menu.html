@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas sobre el Menú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #555;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preguntas sobre el Menú</h1>
+
+    <!-- Preguntas sobre los Lunch Bowl Combos -->
+    <div class="question">
+        <h3>1. ¿Qué incluye el combo de Lunch Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q1" value="a"> a) Entrada, bowl y bebida</label>
+            <label><input type="radio" name="q1" value="b"> b) Entrada, postre y bebida</label>
+            <label><input type="radio" name="q1" value="c"> c) Bowl, postre y bebida</label>
+            <label><input type="radio" name="q1" value="d"> d) Solo el bowl</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>2. ¿Qué bebidas puedes elegir en el combo de Lunch Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q2" value="a"> a) Té frío, limonada o Coca Cola</label>
+            <label><input type="radio" name="q2" value="b"> b) Café, jugo de naranja o agua</label>
+            <label><input type="radio" name="q2" value="c"> c) Margarita, cerveza o vino</label>
+            <label><input type="radio" name="q2" value="d"> d) Solo agua</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>3. ¿Qué base puedes elegir para tu bowl en el Margarita Chicken Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q3" value="a"> a) Arroz o quinoa</label>
+            <label><input type="radio" name="q3" value="b"> b) Lechuga o espinacas</label>
+            <label><input type="radio" name="q3" value="c"> c) Frijoles o maíz</label>
+            <label><input type="radio" name="q3" value="d"> d) Solo arroz</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Bowls -->
+    <div class="question">
+        <h3>4. ¿Qué ingredientes lleva el Margarita Chicken Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q4" value="a"> a) Lechuga mixta, ensalada de maíz dulce y frijoles, pico de gallo, culantro, aguacate, pollo al estilo margarita, aderezo Honey Lime y tiritas de tortilla crujientes</label>
+            <label><input type="radio" name="q4" value="b"> b) Lechuga, maíz dulce, frijoles, queso mixto, aguacate y pollo honey chipotle</label>
+            <label><input type="radio" name="q4" value="c"> c) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q4" value="d"> d) Pollo BBQ, queso fresco, aros de cebolla, tomate fresco, tocineta y huevo frito</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>5. ¿Qué aderezo acompaña al Honey Chipotle Chicken Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q5" value="a"> a) Chipotle Ranch</label>
+            <label><input type="radio" name="q5" value="b"> b) Honey Lime</label>
+            <label><input type="radio" name="q5" value="c"> c) Salsa de la casa</label>
+            <label><input type="radio" name="q5" value="d"> d) Aderezo de cilantro</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>6. ¿Qué ingredientes lleva el Mango BBQ Carnitas Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q6" value="a"> a) Carnitas de cerdo, salsa Mango BBQ, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q6" value="b"> b) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+            <label><input type="radio" name="q6" value="c"> c) Salmón, maíz dulce, brócoli, lechuga y pepino fresco</label>
+            <label><input type="radio" name="q6" value="d"> d) Camarones a la parrilla, arroz Southwest, lechuga y queso mixto</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>7. ¿Qué ingredientes incluye el Sunrise Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q7" value="a"> a) Pollo BBQ, queso fresco, aros de cebolla, tomate fresco, tocineta y huevo frito</label>
+            <label><input type="radio" name="q7" value="b"> b) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q7" value="c"> c) Lechuga mixta, maíz dulce, frijoles, pico de gallo y pollo al estilo margarita</label>
+            <label><input type="radio" name="q7" value="d"> d) Salmón, maíz dulce, brócoli, lechuga y pepino fresco</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>8. ¿Qué aderezo acompaña al Honey Lime Salmon Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q8" value="a"> a) Honey Lime</label>
+            <label><input type="radio" name="q8" value="b"> b) Chipotle Ranch</label>
+            <label><input type="radio" name="q8" value="c"> c) Salsa de la casa</label>
+            <label><input type="radio" name="q8" value="d"> d) Aderezo de cilantro</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>9. ¿Qué ingredientes lleva el Chipotle Shrimp Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q9" value="a"> a) Camarones a la parrilla, arroz Southwest, lechuga, queso mixto, ensalada de frijoles con maíz dulce, pico de gallo, culantro, aguacate y tiritas de tortilla crujientes</label>
+            <label><input type="radio" name="q9" value="b"> b) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+            <label><input type="radio" name="q9" value="c"> c) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q9" value="d"> d) Salmón, maíz dulce, brócoli, lechuga y pepino fresco</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>10. ¿Qué ingredientes incluye el Veggie Bowl?</h3>
+        <div class="options">
+            <label><input type="radio" name="q10" value="a"> a) Pepino picado, maíz dulce, huevo cocido, brócoli, aderezo de cilantro y torta vegetariana</label>
+            <label><input type="radio" name="q10" value="b"> b) Lechuga mixta, maíz dulce, frijoles, pico de gallo y pollo al estilo margarita</label>
+            <label><input type="radio" name="q10" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga y queso mixto</label>
+            <label><input type="radio" name="q10" value="d"> d) Pollo BBQ, queso fresco, aros de cebolla, tomate fresco, tocineta y huevo frito</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre el combo 3x12 -->
+    <div class="question">
+        <h3>11. ¿Qué opciones puedes elegir en el combo 3x12?</h3>
+        <div class="options">
+            <label><input type="radio" name="q11" value="a"> a) Bebida, entrada, plato fuerte y postre</label>
+            <label><input type="radio" name="q11" value="b"> b) Bebida, entrada y plato fuerte</label>
+            <label><input type="radio" name="q11" value="c"> c) Plato fuerte, postre y bebida</label>
+            <label><input type="radio" name="q11" value="d"> d) Solo plato fuerte y bebida</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>12. ¿Qué platos fuertes están disponibles en el combo 3x12?</h3>
+        <div class="options">
+            <label><input type="radio" name="q12" value="a"> a) Hamburguesa OldTimer™, Quesadilla Explosion Salad, Bacon Ranch Quesadilla, Cajún Chicken Pasta, Crispy Chicken Sandwich, Big Smasher Burger, Monterrey Chicken, Cilantro Pesto Pasta con Camarones y ⅓ de Costillas Baby Back</label>
+            <label><input type="radio" name="q12" value="b"> b) Margarita Chicken Bowl, Honey Chipotle Chicken Bowl, Mango BBQ Carnitas Bowl y Sunrise Bowl</label>
+            <label><input type="radio" name="q12" value="c"> c) Texas Eggrolls, Patacones, Chips & Salsa y Nuevos Aros de cebolla</label>
+            <label><input type="radio" name="q12" value="d"> d) Mini Molten, Mini Cheesecake y Chocolate Chip Cookie</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>13. ¿Qué postres puedes elegir en el combo 3x12?</h3>
+        <div class="options">
+            <label><input type="radio" name="q13" value="a"> a) Mini Molten, Mini Cheesecake y Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q13" value="b"> b) Molten Chocolate Cake, Cheesecake y Skillet Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q13" value="c"> c) Helado de vainilla, fudge de chocolate y galleta de chocolips</label>
+            <label><input type="radio" name="q13" value="d"> d) Solo Mini Molten</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre las Fajitas -->
+    <div class="question">
+        <h3>14. ¿Qué carnes puedes elegir para las fajitas?</h3>
+        <div class="options">
+            <label><input type="radio" name="q14" value="a"> a) Pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q14" value="b"> b) Pollo, salmón, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q14" value="c"> c) Pollo, carnitas de cerdo, salmón y camarones a la parrilla</label>
+            <label><input type="radio" name="q14" value="d"> d) Solo pollo y carne asada</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>15. ¿Qué incluye la Mushroom Jack Fajita?</h3>
+        <div class="options">
+            <label><input type="radio" name="q15" value="a"> a) Pechuga de pollo, cebolla y chile dulce salteado, queso Monterey Jack gratinado, tocineta picada y hongos salteados</label>
+            <label><input type="radio" name="q15" value="b"> b) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q15" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga y queso mixto</label>
+            <label><input type="radio" name="q15" value="d"> d) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Burgers -->
+    <div class="question">
+        <h3>16. ¿Qué ingredientes lleva la Mushroom Jack Burger?</h3>
+        <div class="options">
+            <label><input type="radio" name="q16" value="a"> a) Hongos salteados, queso Monterey Jack, aioli de ajo, lechuga rallada, tomate y pepinillos</label>
+            <label><input type="radio" name="q16" value="b"> b) Huevo frito, queso Monterey Jack, tocineta, lechuga, cebolla morada, tomate y salsa Signature</label>
+            <label><input type="radio" name="q16" value="c"> c) Aguacate, queso Monterrey, cebolla morada, jalapeños rostizados, tomate, pepinillos y salsa Santa Fe</label>
+            <label><input type="radio" name="q16" value="d"> d) Tocineta ahumada, queso cheddar gratinado, aros de cebolla empanizados, lechuga, tomate y salsa Signature</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>17. ¿Qué ingredientes incluye la Sunrise Burger?</h3>
+        <div class="options">
+            <label><input type="radio" name="q17" value="a"> a) Huevo frito, queso Monterey Jack, tocineta, lechuga, cebolla morada, tomate y salsa Signature</label>
+            <label><input type="radio" name="q17" value="b"> b) Hongos salteados, queso Monterey Jack, aioli de ajo, lechuga rallada, tomate y pepinillos</label>
+            <label><input type="radio" name="q17" value="c"> c) Aguacate, queso Monterrey, cebolla morada, jalapeños rostizados, tomate, pepinillos y salsa Santa Fe</label>
+            <label><input type="radio" name="q17" value="d"> d) Tocineta ahumada, queso cheddar gratinado, aros de cebolla empanizados, lechuga, tomate y salsa Signature</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>18. ¿Qué ingredientes lleva la Ultimate Bacon Burger?</h3>
+        <div class="options">
+            <label><input type="radio" name="q18" value="a"> a) Extra tocino, queso cheddar, pepinillos, lechuga, cebolla morada, tomate, aioli de culantro, salsa Buffalo y Honey Chipotle</label>
+            <label><input type="radio" name="q18" value="b"> b) Aguacate, queso Monterrey, cebolla morada, jalapeños rostizados, tomate, pepinillos y salsa Santa Fe</label>
+            <label><input type="radio" name="q18" value="c"> c) Hongos salteados, queso Monterey Jack, aioli de ajo, lechuga rallada, tomate y pepinillos</label>
+            <label><input type="radio" name="q18" value="d"> d) Huevo frito, queso Monterey Jack, tocineta, lechuga, cebolla morada, tomate y salsa Signature</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>19. ¿Qué ingredientes incluye la Sweet & Smoky Burger?</h3>
+        <div class="options">
+            <label><input type="radio" name="q19" value="a"> a) Salsa BBQ de mango, queso Monterey Jack gratinado, tocineta ahumada, aros de cebolla empanizados, lechuga, cebolla morada y tomate</label>
+            <label><input type="radio" name="q19" value="b"> b) Aguacate, queso Monterrey, cebolla morada, jalapeños rostizados, tomate, pepinillos y salsa Santa Fe</label>
+            <label><input type="radio" name="q19" value="c"> c) Hongos salteados, queso Monterey Jack, aioli de ajo, lechuga rallada, tomate y pepinillos</label>
+            <label><input type="radio" name="q19" value="d"> d) Huevo frito, queso Monterey Jack, tocineta, lechuga, cebolla morada, tomate y salsa Signature</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Aperitivos -->
+    <div class="question">
+        <h3>20. ¿Qué ingredientes lleva el Tableside Guacamole?</h3>
+        <div class="options">
+            <label><input type="radio" name="q20" value="a"> a) Aguacates, tomate, cebolla, culantro, jalapeños asados y limón</label>
+            <label><input type="radio" name="q20" value="b"> b) Frijoles molidos, salsa de queso, guacamole, carnitas de cerdo y cebolla morada</label>
+            <label><input type="radio" name="q20" value="c"> c) Tortilla de harina rellena de pollo ahumado, frijoles negros, maíz y queso Pepperjack</label>
+            <label><input type="radio" name="q20" value="d"> d) Tostadas de maíz extra crujientes con salsa de la casa</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>21. ¿Qué ingredientes incluyen los Texas Patacones?</h3>
+        <div class="options">
+            <label><input type="radio" name="q21" value="a"> a) Patacones cubiertos con frijoles molidos, salsa de queso, guacamole, carnitas de cerdo, aioli de culantro, pico de gallo y cebolla morada</label>
+            <label><input type="radio" name="q21" value="b"> b) Tostadas de maíz extra crujientes con salsa de la casa</label>
+            <label><input type="radio" name="q21" value="c"> c) Tortilla de harina rellena de pollo ahumado, frijoles negros, maíz y queso Pepperjack</label>
+            <label><input type="radio" name="q21" value="d"> d) Aguacates, tomate, cebolla, culantro, jalapeños asados y limón</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>22. ¿Qué ingredientes llevan los Texas Eggrolls?</h3>
+        <div class="options">
+            <label><input type="radio" name="q22" value="a"> a) Tortilla de harina rellena de pollo ahumado, frijoles negros, maíz, queso Pepperjack, chile dulce y espinacas</label>
+            <label><input type="radio" name="q22" value="b"> b) Patacones cubiertos con frijoles molidos, salsa de queso, guacamole, carnitas de cerdo y cebolla morada</label>
+            <label><input type="radio" name="q22" value="c"> c) Tostadas de maíz extra crujientes con salsa de la casa</label>
+            <label><input type="radio" name="q22" value="d"> d) Aguacates, tomate, cebolla, culantro, jalapeños asados y limón</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>23. ¿Qué ingredientes incluyen los Texas Cheese Poppers?</h3>
+        <div class="options">
+            <label><input type="radio" name="q23" value="a"> a) Bolitas de queso empanizadas servidas con aderezo Chipotle Ranch</label>
+            <label><input type="radio" name="q23" value="b"> b) Tortilla de harina rellena de pollo ahumado, frijoles negros, maíz y queso Pepperjack</label>
+            <label><input type="radio" name="q23" value="c"> c) Patacones cubiertos con frijoles molidos, salsa de queso, guacamole, carnitas de cerdo y cebolla morada</label>
+            <label><input type="radio" name="q23" value="d"> d) Tostadas de maíz extra crujientes con salsa de la casa</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>24. ¿Qué ingredientes lleva el Classic Nachos?</h3>
+        <div class="options">
+            <label><input type="radio" name="q24" value="a"> a) Tortillas tostadas, queso, frijoles molidos, pollo a la parrilla o cerdo, y jalapeño</label>
+            <label><input type="radio" name="q24" value="b"> b) Patacones cubiertos con frijoles molidos, salsa de queso, guacamole, carnitas de cerdo y cebolla morada</label>
+            <label><input type="radio" name="q24" value="c"> c) Tortilla de harina rellena de pollo ahumado, frijoles negros, maíz y queso Pepperjack</label>
+            <label><input type="radio" name="q24" value="d"> d) Aguacates, tomate, cebolla, culantro, jalapeños asados y limón</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre las Costillas -->
+    <div class="question">
+        <h3>25. ¿Qué salsas puedes elegir para las Baby Back Ribs?</h3>
+        <div class="options">
+            <label><input type="radio" name="q25" value="a"> a) BBQ, Honey-Chipotle y Honey BBQ</label>
+            <label><input type="radio" name="q25" value="b"> b) Buffalo, BBQ y Mostaza Miel</label>
+            <label><input type="radio" name="q25" value="c"> c) Salsa de la casa, Chipotle Ranch y Honey Lime</label>
+            <label><input type="radio" name="q25" value="d"> d) Solo BBQ</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>26. ¿Qué incluye el Texas Family Platter?</h3>
+        <div class="options">
+            <label><input type="radio" name="q26" value="a"> a) Rack completo de Baby Back Ribs, 4 Texas Eggrolls, 4 Big Mouth® Bites, 4 Chicken Crispers®, 4 elotes, guacamole y chips</label>
+            <label><input type="radio" name="q26" value="b"> b) Medio rack de costillas, papas fritas, pan de ajo y elote rostizado</label>
+            <label><input type="radio" name="q26" value="c"> c) Pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q26" value="d"> d) Solo Baby Back Ribs y papas fritas</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Postres -->
+    <div class="question">
+        <h3>27. ¿Qué postre incluye relleno de chocolate caliente y helado de vainilla?</h3>
+        <div class="options">
+            <label><input type="radio" name="q27" value="a"> a) Molten Chocolate Cake</label>
+            <label><input type="radio" name="q27" value="b"> b) Cheesecake</label>
+            <label><input type="radio" name="q27" value="c"> c) Skillet Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q27" value="d"> d) Mini Molten</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>28. ¿Qué postre se sirve con salsa de fresas?</h3>
+        <div class="options">
+            <label><input type="radio" name="q28" value="a"> a) Cheesecake</label>
+            <label><input type="radio" name="q28" value="b"> b) Molten Chocolate Cake</label>
+            <label><input type="radio" name="q28" value="c"> c) Skillet Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q28" value="d"> d) Mini Molten</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre el Menú de Niños -->
+    <div class="question">
+        <h3>29. ¿Qué incluye el Menú de Niños?</h3>
+        <div class="options">
+            <label><input type="radio" name="q29" value="a"> a) Una bebida, un acompañamiento y una copa de helado</label>
+            <label><input type="radio" name="q29" value="b"> b) Una bebida, un plato fuerte y un postre</label>
+            <label><input type="radio" name="q29" value="c"> c) Solo una bebida y un acompañamiento</label>
+            <label><input type="radio" name="q29" value="d"> d) Solo un plato fuerte y un postre</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>30. ¿Qué opciones de acompañamiento tiene el Menú de Niños?</h3>
+        <div class="options">
+            <label><input type="radio" name="q30" value="a"> a) Arroz Southwest, elote, frijoles enteros, patacones, frijoles molidos, ensalada de la casa, puré de papa, brócoli, puré loaded, mac n' cheese, papas fritas y aros de cebolla</label>
+            <label><input type="radio" name="q30" value="b"> b) Solo papas fritas y aros de cebolla</label>
+            <label><input type="radio" name="q30" value="c"> c) Solo arroz Southwest y frijoles enteros</label>
+            <label><input type="radio" name="q30" value="d"> d) Solo puré de papa y brócoli</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre las Fajitas (continuación) -->
+    <div class="question">
+        <h3>31. ¿Qué incluye la Fajita Trío?</h3>
+        <div class="options">
+            <label><input type="radio" name="q31" value="a"> a) Tres carnes a elegir entre pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q31" value="b"> b) Dos carnes a elegir entre pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q31" value="c"> c) Solo pollo y carne asada</label>
+            <label><input type="radio" name="q31" value="d"> d) Solo camarones a la parrilla y carnitas de cerdo</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>32. ¿Qué ingredientes lleva la Mushroom Jack Fajita?</h3>
+        <div class="options">
+            <label><input type="radio" name="q32" value="a"> a) Pechuga de pollo, cebolla y chile dulce salteado, queso Monterey Jack gratinado, tocineta picada y hongos salteados</label>
+            <label><input type="radio" name="q32" value="b"> b) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q32" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga y queso mixto</label>
+            <label><input type="radio" name="q32" value="d"> d) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Platos Fuertes -->
+    <div class="question">
+        <h3>33. ¿Qué ingredientes lleva el Grilled Salmon with Garlic and Herbs?</h3>
+        <div class="options">
+            <label><input type="radio" name="q33" value="a"> a) Filete de salmón sazonado con hierbas y mantequilla de ajo, servido con brócoli y arroz Southwest</label>
+            <label><input type="radio" name="q33" value="b"> b) Filete de salmón cubierto con salsa Ancho, bañado con aioli de culantro y queso fresco</label>
+            <label><input type="radio" name="q33" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga, queso mixto y ensalada de frijoles con maíz dulce</label>
+            <label><input type="radio" name="q33" value="d"> d) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>34. ¿Qué ingredientes incluye el Ancho Salmon?</h3>
+        <div class="options">
+            <label><input type="radio" name="q34" value="a"> a) Filete de salmón cubierto con salsa Ancho, bañado con aioli de culantro y queso fresco</label>
+            <label><input type="radio" name="q34" value="b"> b) Filete de salmón sazonado con hierbas y mantequilla de ajo, servido con brócoli y arroz Southwest</label>
+            <label><input type="radio" name="q34" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga, queso mixto y ensalada de frijoles con maíz dulce</label>
+            <label><input type="radio" name="q34" value="d"> d) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre los Postres (continuación) -->
+    <div class="question">
+        <h3>35. ¿Qué postre incluye helado de vainilla y fudge de chocolate?</h3>
+        <div class="options">
+            <label><input type="radio" name="q35" value="a"> a) Skillet Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q35" value="b"> b) Molten Chocolate Cake</label>
+            <label><input type="radio" name="q35" value="c"> c) Cheesecake</label>
+            <label><input type="radio" name="q35" value="d"> d) Mini Molten</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>36. ¿Qué postre se sirve con salsa de fresas?</h3>
+        <div class="options">
+            <label><input type="radio" name="q36" value="a"> a) Cheesecake</label>
+            <label><input type="radio" name="q36" value="b"> b) Molten Chocolate Cake</label>
+            <label><input type="radio" name="q36" value="c"> c) Skillet Chocolate Chip Cookie</label>
+            <label><input type="radio" name="q36" value="d"> d) Mini Molten</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre el Menú de Niños (continuación) -->
+    <div class="question">
+        <h3>37. ¿Qué incluye el Menú de Niños?</h3>
+        <div class="options">
+            <label><input type="radio" name="q37" value="a"> a) Una bebida, un acompañamiento y una copa de helado</label>
+            <label><input type="radio" name="q37" value="b"> b) Una bebida, un plato fuerte y un postre</label>
+            <label><input type="radio" name="q37" value="c"> c) Solo una bebida y un acompañamiento</label>
+            <label><input type="radio" name="q37" value="d"> d) Solo un plato fuerte y un postre</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>38. ¿Qué opciones de acompañamiento tiene el Menú de Niños?</h3>
+        <div class="options">
+            <label><input type="radio" name="q38" value="a"> a) Arroz Southwest, elote, frijoles enteros, patacones, frijoles molidos, ensalada de la casa, puré de papa, brócoli, puré loaded, mac n' cheese, papas fritas y aros de cebolla</label>
+            <label><input type="radio" name="q38" value="b"> b) Solo papas fritas y aros de cebolla</label>
+            <label><input type="radio" name="q38" value="c"> c) Solo arroz Southwest y frijoles enteros</label>
+            <label><input type="radio" name="q38" value="d"> d) Solo puré de papa y brócoli</label>
+        </div>
+    </div>
+
+    <!-- Preguntas sobre las Fajitas (continuación) -->
+    <div class="question">
+        <h3>39. ¿Qué incluye la Fajita Trío?</h3>
+        <div class="options">
+            <label><input type="radio" name="q39" value="a"> a) Tres carnes a elegir entre pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q39" value="b"> b) Dos carnes a elegir entre pollo, carnitas de cerdo, carne asada y camarones a la parrilla</label>
+            <label><input type="radio" name="q39" value="c"> c) Solo pollo y carne asada</label>
+            <label><input type="radio" name="q39" value="d"> d) Solo camarones a la parrilla y carnitas de cerdo</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>40. ¿Qué ingredientes lleva la Mushroom Jack Fajita?</h3>
+        <div class="options">
+            <label><input type="radio" name="q40" value="a"> a) Pechuga de pollo, cebolla y chile dulce salteado, queso Monterey Jack gratinado, tocineta picada y hongos salteados</label>
+            <label><input type="radio" name="q40" value="b"> b) Carnitas de cerdo, aguacate, pico de gallo y queso fresco</label>
+            <label><input type="radio" name="q40" value="c"> c) Camarones a la parrilla, arroz Southwest, lechuga y queso mixto</label>
+            <label><input type="radio" name="q40" value="d"> d) Pollo al estilo margarita, lechuga mixta, maíz dulce y frijoles</label>
+        </div>
+    </div>
+
+    <!-- Botón para verificar respuestas -->
+    <button onclick="checkAnswers()">Verificar Respuestas</button>
+
+    <!-- Resultado -->
+    <div id="result"></div>
+
+    <script>
+        // Respuestas correctas (distribuidas aleatoriamente)
+        const correctAnswers = {
+            q1: "a",
+            q2: "b",
+            q3: "c",
+            q4: "d",
+            q5: "a",
+            q6: "b",
+            q7: "c",
+            q8: "d",
+            q9: "a",
+            q10: "b",
+            q11: "c",
+            q12: "d",
+            q13: "a",
+            q14: "b",
+            q15: "c",
+            q16: "d",
+            q17: "a",
+            q18: "b",
+            q19: "c",
+            q20: "d",
+            q21: "a",
+            q22: "b",
+            q23: "c",
+            q24: "d",
+            q25: "a",
+            q26: "b",
+            q27: "c",
+            q28: "d",
+            q29: "a",
+            q30: "b",
+            q31: "c",
+            q32: "d",
+            q33: "a",
+            q34: "b",
+            q35: "c",
+            q36: "d",
+            q37: "a",
+            q38: "b",
+            q39: "c",
+            q40: "d"
+        };
+
+        // Función para verificar respuestas
+        function checkAnswers() {
+            let score = 0;
+            for (let i = 1; i <= 40; i++) {
+                const questionName = `q${i}`;
+                const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                if (selectedAnswer) {
+                    const userAnswer = selectedAnswer.value;
+                    const correctAnswer = correctAnswers[questionName];
+                    const options = document.querySelectorAll(`input[name="${questionName}"]`);
+
+                    options.forEach(option => {
+                        if (option.value === correctAnswer) {
+                            option.parentElement.classList.add("correct");
+                        } else if (option.checked && option.value !== correctAnswer) {
+                            option.parentElement.classList.add("incorrect");
+                        }
+                    });
+
+                    if (userAnswer === correctAnswer) {
+                        score++;
+                    }
+                }
+            }
+            document.getElementById("result").innerText = `Respuestas correctas: ${score} de 40`;
+        }
+    </script>
+</body>
+</html>
